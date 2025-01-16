@@ -1,0 +1,31 @@
+.product{
+    border: 1px solid #fff;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    height: 23vh;
+    width: 400px;
+}
+
+.productImage{
+    height:70% ;
+    width: 40%;
+    overflow: hidden;
+}
+.productText{
+    padding-left: 20px;
+}
+.productImage img{
+    height: 100%;
+    width: 100%;
+    background-size:cover;
+    opacity: .95;
+    
+}
+.productImage img:hover{
+    opacity: 1;
+    transform: scale(1.2);
+    transition: all .5s ease;
+}
