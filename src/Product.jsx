@@ -1,18 +1,18 @@
 import './Product.css'
 
-const Product = () => {
+export default function Product({name, src, price, features}) {
   return (
     <div className='product'>
       <div className='productImage'>
         <img 
-        src="https://i.pinimg.com/736x/dc/e0/e4/dce0e4f11cc3ed50ab2995257427bb55.jpg" alt="product image " />
+        src={src} alt="product image " />
       </div>
       <div className='productText'>
-        <h2>Product Title</h2>
-        <p>Product Description</p>
+        <h2>{name}</h2>
+        <h3>{"$ "+price}</h3>
+        <p>{features}</p>
       </div>
     </div>
   )
 }
 
-export default Product
