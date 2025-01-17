@@ -12,11 +12,10 @@ export default function Product({name, src, price, features}) {
         <h2>{name}</h2>
         <p>{features}</p>
         <h3>{ features=="Sold"? <del>{price}</del>: price>=1999 ? <p><s>${price}</s> {price-Math.floor(price/100)*5}</p> : <p>{price}</p>}</h3>
-        <p>{price>=1999?"Discount of 5% ":""}</p>
-        <button >Add To Cart</button>
+        {price>=1999? <p>Discount Of 5%</p>: null}
+        <button onClick={()=>{alert('Item is Successfully Add Cart')}}>Add To Cart</button>
       </div>
     </div>
   )
- 
 }
 
