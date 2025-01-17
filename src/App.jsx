@@ -4,9 +4,9 @@ import ProductTab from './ProductTab';
 
 function App() {
   return (
-    <>
+    <div className='main'>
       <ProductTab/>
-    </>
+    </div>
   )
 }
 

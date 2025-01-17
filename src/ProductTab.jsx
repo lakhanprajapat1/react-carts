@@ -1,8 +1,9 @@
 import Product from "./Product";
-
+import './ProductTab.css'
 
 const ProductTab = () => {
-  var option=["hi-tech", "best deal", "sale", "30% off"]
+  let option=["hi-tech", "best deal", "sale", "new launch","Sold"];
+
   return (
     <>
       <Product 
@@ -33,13 +34,13 @@ const ProductTab = () => {
       name="HeadPhone" 
       src="https://i.pinimg.com/736x/7e/d7/6c/7ed76ce2f891f3a6ecd9af95e8db097e.jpg"
       price={999}
-      features={option[1]}
+      features={option[4]}
       />
       <Product 
       name="Power Bank" 
       src="https://i.pinimg.com/736x/86/a9/3c/86a93cffa4c18dad181a1f049e93697a.jpg"
       price={799}
-      features={option[2]}
+      features={option[2]} 
       />
     </>
   )
